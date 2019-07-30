@@ -2,7 +2,7 @@
 # thanks pez!
 
 # Standardwerte für Aurena.at
-$i1 = 0;  # Rufpreis
+# $i1 = Rufpreis
 $i2 = 15; # Auktionsgebühr
 $i3 = 20; # Mehrwertsteuer
 
