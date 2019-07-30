@@ -33,7 +33,7 @@ if(!empty($_POST['i1'])) {
     <table>
       <tr>
        <td>Rufpreis</td>
-       <td><input type="text" name="i1" value="<?php echo htmlentities($i1); ?>"></td>
+       <td><input type="text" name="i1" value="<?php echo htmlentities($i1); ?>" autofocus></td>
        <td><input type="submit" value="berechnen"></td>
       </tr>
       <tr>
