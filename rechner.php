@@ -1,9 +1,12 @@
 <?php
+# thanks pez!
 
-$i2 = 15;
-$i3 = 20;
+# Standardwerte für Aurena.at
+$i1 = 0;  # Rufpreis
+$i2 = 15; # Auktionsgebühr
+$i3 = 20; # Mehrwertsteuer
 
-if(!empty($_POST['i1']) &&!empty($_POST['i2']) && !empty($_POST['i3'])) {
+if(!empty($_POST['i1'])) {
   $i1 = $_POST['i1'];
   $i2 = $_POST['i2'];
   $i3 = $_POST['i3'];
@@ -19,7 +22,7 @@ if(!empty($_POST['i1']) &&!empty($_POST['i2']) && !empty($_POST['i3'])) {
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Formel</title>
+  <title>Rechner Auktionsgebühren</title>
   <style type="text/css">
   	* { font-family: sans-serif; }
   	input { text-align: right; }
