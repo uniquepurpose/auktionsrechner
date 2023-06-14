@@ -1,10 +1,7 @@
 <?php
-# thanks pez!
 
-
-# $i1 = Rufpreis
-$i2 = 18; # Auktionsgebühr
-$i3 = 20; # Mehrwertsteuer
+$i2 = 18;
+$i3 = 20;
 
 if(!empty($_POST['i1']) &&!empty($_POST['i2']) && !empty($_POST['i3'])) {
   $i1 = $_POST['i1'];
@@ -22,7 +19,7 @@ if(!empty($_POST['i1']) &&!empty($_POST['i2']) && !empty($_POST['i3'])) {
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Formel</title>
+  <title>Rechner Auktionsgebühren</title>
   <style type="text/css">
         * { font-family: sans-serif; }
         input { text-align: right; }
@@ -33,7 +30,7 @@ if(!empty($_POST['i1']) &&!empty($_POST['i2']) && !empty($_POST['i3'])) {
     <table>
       <tr>
        <td>Rufpreis</td>
-       <td><input type="text" name="i1" value="<?php echo htmlentities($i1); ?>"></td>
+       <td><input type="text" name="i1" value="<?php echo htmlentities($i1); ?>" autofocus></td>
        <td><input type="submit" value="berechnen"></td>
       </tr>
       <tr>
